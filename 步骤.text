@@ -1,0 +1,12 @@
+1. 为sight景点生成日期区间的panel
+
+   1.2 将xiaozhu的第一条评论作为house的进入市场的时间enterdate
+
+   1.1 将sight景点的评论最早最晚日期作为区间生成
+
+2. 创建空的包含所有要统计的字段的dataframe，为这些字段计算统计值
+
+   2.1 初始化dataframe，假设为other_columns_df
+   2.2 统一xiaozhu的enterdate为月份，循环景点某一日期，统计符合距离要求的xiaozhu，根据索引设置other_columns_df的值
+
+3. 合并中间结果数据集
